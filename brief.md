@@ -26,9 +26,22 @@ Resource: Preventing Insecure Network Connections - https://developer.apple.com/
 
 ## Networking
 
+IPv4 uses 32-bit addresses, while IPv6 uses 128-bit addresses, providing a vastly larger address space. This difference matters as smartphones, sensors, servers, and other connected devices continue to grow in number. IPv6 supports a much greater number of addressable devices and simplifies address autoconfiguration. For a government assistant, planning for IPv6 helps support future connectivity, although networks and services must be configured and secured correctly.
+
+Resource: RFC 8200 - Internet Protocol, Version 6 (IPv6) Specification - https://www.rfc-editor.org/rfc/rfc8200
+
 ## Cybersecurity
 
+Prompt injection occurs when malicious instructions manipulate an AI model into ignoring intended rules or performing unintended actions. Direct injection comes from a user's prompt; indirect injection is hidden in external content, such as a retrieved document or webpage. Risk can be reduced by treating retrieved content as untrusted data and by limiting the assistant's tools and permissions. Sensitive actions should also require explicit authorization and independent validation.
+
+Resource: OWASP Top 10 for LLM Applications - LLM01: Prompt Injection - https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+
+
 ## Data
+
+Anonymization removes identifying information so individuals can no longer be identified by means reasonably likely to be used. Pseudonymization replaces direct identifiers with codes, but re-identification may remain possible using separately held information. Properly anonymized data falls outside personal-data protection rules where the applicable law defines it that way; pseudonymized data remains personal data. Chat logs should also be minimized, access-controlled, and retained only as long as necessary.
+
+Resource: Regulation (EU) 2016/679 (General Data Protection Regulation) - https://eur-lex.europa.eu/eli/reg/2016/679/oj
 
 ## Misconception in My Track
 
