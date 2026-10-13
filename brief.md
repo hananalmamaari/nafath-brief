@@ -45,4 +45,11 @@ Resource: Regulation (EU) 2016/679 (General Data Protection Regulation) - https:
 
 ## Misconception in My Track
 
+A common misconception is that Retrieval-Augmented Generation (RAG) completely prevents prompt injection because the assistant uses trusted documents. In reality, retrieved documents can contain malicious instructions that manipulate the model. RAG improves access to relevant information but does not eliminate this security risk. The OWASP guidance explains that RAG does not fully mitigate prompt injection and recommends separating untrusted external content, limiting model privileges, and requiring human approval for high-risk actions.
+Evidence sentence: “While techniques like Retrieval Augmented Generation (RAG) and fine-tuning aim to make LLM outputs more relevant and accurate, research shows that they do not fully mitigate prompt injection vulnerabilities.”
+
+Resource used for evidence: OWASP Top 10 for LLM Applications - LLM01: Prompt Injection - https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+
 ## Open Question
+
+How can a government AI assistant reliably detect indirect prompt injection in retrieved service documents while keeping responses accurate and useful for citizens?
